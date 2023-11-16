@@ -1,0 +1,23 @@
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Flask-SocketIO Example</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.2/socket.io.js"></script>
+        <script src="socket.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <div>
+                <input type="text" id="socketIP" placeholder="IP">
+                <input type="text" id="socketPort" placeholder="Port">
+            </div>
+            <div>
+                <button onclick="connectToWebSocket()">연결</button>
+                <button onclick="disconnectFromWebSocket()">연결 해제</button>
+                <button onclick="getWarning()">경고 레벨</button>
+            </div>  
+            <p id="levelDisplay"></p>
+        </main>
+    </body>
+</html>
